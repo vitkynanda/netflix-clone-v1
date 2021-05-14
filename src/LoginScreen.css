@@ -1,0 +1,115 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("https://dkr0pu7ej5xex.cloudfront.net/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+
+.loginScreen__logo {
+  position: fixed;
+  top: 5px;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.loginScreen__button {
+  position: fixed;
+  right: 40px;
+  top: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  font-weight: 400;
+  border-radius: 5%;
+  border: none;
+}
+
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 120vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen__body {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 30%;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.loginScreen__body > h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.loginScreen__body > h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.loginScreen__body > h3 {
+  font-size: 1rem;
+  font-weight: 430;
+}
+
+.loginScreen__input > form > input {
+  padding: 10px 0 10px 9px;
+  height: 30px;
+  border: none;
+  width: 30%;
+  max-width: 600px;
+  cursor: pointer;
+}
+
+.loginScreen__getStarted {
+  font-size: 1rem;
+  padding: 16px 20px;
+  border: none;
+  color: #fff;
+  background-color: #e50914;
+}
+
+.loginScreen__input {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .loginScreen__input > form > input {
+    padding: 10.2px 0 9px 9px;
+    height: 30px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .loginScreen__body > h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .loginScreen__body > h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .loginScreen__body > h3 {
+    font-size: 0.8rem;
+    font-weight: 430;
+  }
+}
